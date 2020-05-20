@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/TXTperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="42dp"
+        android:text="PERFIL DEL USUARIO"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVnomperfil"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="139dp"
+        android:text="NOMBRE:"
+        app:layout_constraintBottom_toTopOf="@+id/TVedadperfil"
+        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVedadperfil"
+        android:layout_width="80dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginStart="37dp"
+        android:text="EDAD:"
+        app:layout_constraintBottom_toTopOf="@+id/TVdireperfil"
+        app:layout_constraintEnd_toStartOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVnomperfil" />
+
+    <TextView
+        android:id="@+id/TVdireperfil"
+        android:layout_width="95dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="37dp"
+        android:text="DIRECCIÓN"
+        app:layout_constraintBottom_toTopOf="@+id/TVtelperfil"
+        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVedadperfil" />
+
+    <TextView
+        android:id="@+id/TVtelperfil"
+        android:layout_width="95dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="222dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="37dp"
+        android:text="TELÉFONO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVdireperfil" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="227dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:editable="?android:attr/windowOverscan"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVnomperfil"
+        app:layout_constraintTop_toBottomOf="@+id/TXTperfil" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVedadperfil"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVdireperfil"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="96dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/BTactualizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TVtelperfil"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/BTactualizar"
+        android:layout_width="121dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="57dp"
+        android:layout_marginStart="57dp"
+        android:text="MOSTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TXTperfil"
+        app:layout_constraintStart_toEndOf="@+id/TVtelperfil"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+</android.support.constraint.ConstraintLayout>

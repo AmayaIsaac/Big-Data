@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/LABELregistrarse"
+        android:layout_width="103dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:text="REGISTRARSE"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNingresar" />
+
+    <Button
+        android:id="@+id/BTNingresar"
+        android:layout_width="204dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="11dp"
+        android:text="INGRESAR"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/LABELregistrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CBrecordar" />
+
+    <EditText
+        android:id="@+id/TXTpassword"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/CBrecordar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTusuario" />
+
+    <EditText
+        android:id="@+id/TXTusuario"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="USUARIO"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/TXTpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IMAGicono" />
+
+    <ImageView
+        android:id="@+id/IMAGicono"
+        android:layout_width="0dp"
+        android:layout_height="221dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/TXTusuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clinica" />
+
+    <CheckBox
+        android:id="@+id/CBrecordar"
+        android:layout_width="173dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:text="Recordar contraseña"
+        app:layout_constraintBottom_toTopOf="@+id/BTNingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTpassword" />
+
+</android.support.constraint.ConstraintLayout>

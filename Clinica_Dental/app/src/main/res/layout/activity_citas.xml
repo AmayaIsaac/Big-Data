@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Citas"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/BTNfecha"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginStart="16dp"
+        android:background="#ff8800"
+        android:text="FECHA"
+        app:layout_constraintBottom_toTopOf="@+id/BTNhora"
+        app:layout_constraintEnd_toStartOf="@+id/TXTfecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVcitas" />
+
+    <Button
+        android:id="@+id/BTNhora"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginStart="13dp"
+        android:background="#ff8800"
+        android:text="HORA"
+        app:layout_constraintBottom_toTopOf="@+id/BTNagendar"
+        app:layout_constraintEnd_toStartOf="@+id/TXThora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNfecha" />
+
+    <EditText
+        android:id="@+id/TXTfecha"
+        android:layout_width="183dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="71dp"
+        android:ems="10"
+        android:hint="SELECCIONE FECHA"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/BTNhora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BTNfecha"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TXThora"
+        android:layout_width="183dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="SELECCIONE HORA"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/BTNagendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BTNhora"
+        app:layout_constraintTop_toTopOf="@+id/TXTfecha" />
+
+    <TextView
+        android:id="@+id/TVcitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginTop="16dp"
+        android:text="AGENDAR CITAS"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/BTNfecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BTNagendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:text="LISTA"
+        app:layout_constraintBottom_toTopOf="@+id/LVcitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BTNagendar2"
+        app:layout_constraintTop_toBottomOf="@+id/BTNhora" />
+
+    <Button
+        android:id="@+id/BTNagendar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="AGENDAR"
+        app:layout_constraintEnd_toStartOf="@+id/BTNagendar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNhora" />
+
+    <ListView
+        android:id="@+id/LVcitas"
+        android:layout_width="0dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#c6c6c6"
+        app:layout_constraintBottom_toTopOf="@+id/BTNrecuperar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNagendar" />
+
+    <Button
+        android:id="@+id/BTNrecuperar"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:onClick="recuperar"
+        android:text="MOSTRAR"
+        app:layout_constraintBottom_toTopOf="@+id/TXTarchivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BTNguardar"
+        app:layout_constraintTop_toBottomOf="@+id/LVcitas" />
+
+    <Button
+        android:id="@+id/BTNguardar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="9dp"
+        android:onClick="grabar"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toTopOf="@+id/TXTarchivo"
+        app:layout_constraintEnd_toStartOf="@+id/BTNrecuperar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LVcitas" />
+
+    <EditText
+        android:id="@+id/TXTarchivo"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#c6c6c6"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNrecuperar" />
+</android.support.constraint.ConstraintLayout>

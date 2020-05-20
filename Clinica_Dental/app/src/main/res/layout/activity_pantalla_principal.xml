@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pantalla_principal"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/IMGbienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/IBclinica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/contacto1clinica" />
+
+    <TextView
+        android:id="@+id/TVbienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="135dp"
+        android:text="BIENVENIDO"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/IBclinica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/IBclinica"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="267dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IBperfil"
+        app:layout_constraintTop_toBottomOf="@+id/TVbienvenido"
+        app:srcCompat="@drawable/clinica2" />
+
+    <ImageButton
+        android:id="@+id/IBcitas"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="53dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/IMemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IBubicacion"
+        app:layout_constraintTop_toBottomOf="@+id/IBclinica"
+        app:srcCompat="@drawable/citas" />
+
+    <ImageButton
+        android:id="@+id/IBubicacion"
+        android:layout_width="0dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="147dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="148dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IBcitas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVbienvenido"
+        app:srcCompat="@drawable/ubicacion" />
+
+    <ImageButton
+        android:id="@+id/IBperfil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/IBubicacion"
+        app:layout_constraintEnd_toStartOf="@+id/IBclinica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVbienvenido"
+        app:srcCompat="@drawable/perfil" />
+
+    <TextView
+        android:id="@+id/TVcerrarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="461dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="CERRAR SESIÓN"
+        app:layout_constraintBottom_toTopOf="@+id/IMemail"
+        app:layout_constraintEnd_toEndOf="@+id/IMGbienvenida"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/IMfacebook"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginStart="35dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/IMtelefono"
+        app:layout_constraintEnd_toStartOf="@+id/IMtelefono"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/IMtelefono"
+        app:srcCompat="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/IMtelefono"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IMemail"
+        app:layout_constraintStart_toEndOf="@+id/IMfacebook"
+        app:layout_constraintTop_toBottomOf="@+id/IMemail"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/telefono" />
+
+    <ImageButton
+        android:id="@+id/IMemail"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IMtelefono"
+        app:layout_constraintTop_toBottomOf="@+id/TVcerrarsesion"
+        app:srcCompat="@drawable/email" />
+
+</android.support.constraint.ConstraintLayout>

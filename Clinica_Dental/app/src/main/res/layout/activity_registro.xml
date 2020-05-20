@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/LABELregistro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="61dp"
+        android:text="REGISTRO DE USUARIO"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/TXTnombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TXTnombre"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="146dp"
+        android:ems="10"
+        android:hint="NOMBRE"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/TXTusuario"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="USUARIO"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/TXTr_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTnombre" />
+
+    <EditText
+        android:id="@+id/TXTr_password"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toTopOf="@+id/TXTedad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTusuario" />
+
+    <EditText
+        android:id="@+id/TXTedad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="EDAD"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/TXTdireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTr_password" />
+
+    <EditText
+        android:id="@+id/TXTdireccion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="DIRECCIÓN"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/TXTtelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTedad" />
+
+    <EditText
+        android:id="@+id/TXTtelefono"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:hint="TELÉFONO"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/BTNregistar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TXTdireccion" />
+
+    <Button
+        android:id="@+id/BTNregistar"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:text="REGISTAR"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
